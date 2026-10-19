@@ -1,0 +1,24 @@
+{
+  "name": "ctf-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hardhat project for the CTF event platform: UtilityToken (ERC20) + CTFNFT marketplace",
+  "scripts": {
+    "compile": "hardhat compile && node scripts/export-abi.js",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "abi": "hardhat compile && node scripts/export-abi.js",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.6.1",
+    "hardhat": "^2.29.1",
+    "ts-mocha": "^10.1.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "5.4.0"
+  }
+}

@@ -1,0 +1,14 @@
+node_modules/
+cache/
+artifacts/
+coverage/
+coverage.json
+typechain-types/
+
+# Environment
+.env
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
